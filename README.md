@@ -40,3 +40,6 @@ Will follow oficial [tutorial](https://angular.io/tutorial)
 ## [Router](https://angular.io/guide/router)
 - [x] router-outlet
 - [x] navigation link
+
+
+## [Testing](https://angular.io/guide/testing)
