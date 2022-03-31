@@ -3,35 +3,39 @@ Angular demo application
 Will follow oficial [tutorial](https://angular.io/tutorial)
 
 ## [Setup](https://angular.io/tutorial)
--  [x] Create a new workspace and an initial application with `ng new project-name`
--  [x] Serve the application with `ng serve`
--  [ ] Change the application title
--  [x] What is a [component](https://angular.io/api/core/Component)
+- [x] Create a new workspace and an initial application with `ng new project-name`
+- [x] Serve the application with `ng serve`
+- [ ] Change the application title
+- [x] What is a [component](https://angular.io/api/core/Component)
 
 ## Angular [components](https://angular.io/tutorial/toh-pt1)
+- [x] What is a [component](https://angular.io/guide/component-overview)
+- [x] What is a [template](https://angular.io/guide/template-syntax)
 - [x] Create a component using `ng generate component component-name`
-- [ ] Component constructor
-- [ ] ngOnInit
+- [x] Component constructor
+- [x] [ngOnInit](https://angular.io/api/core/OnInit)
 - [x] variables and component properties
 - [x] Show variable in HTML
 - [x] HTML to variable [binding](https://angular.io/guide/binding-syntax)
 - [x] Two way binding
 - [x] Importing a module
-- [x] Defining and showing arrays with [`*ngfor`](https://angular.io/api/common/NgForOf)
+- [x] [Directives](https://angular.io/guide/built-in-directives#built-in-structural-directives)
+- [x] Defining and showing arrays with structural directive [`*ngfor`](https://angular.io/api/common/NgForOf)
 - [x] Define functions for HTML events with [event binding](https://angular.io/guide/event-binding)
-- [x] component [Input](https://angular.io/api/core/Input)
-- [x] conditional classes with [`ngClass`](https://angular.io/api/common/NgClass#description)
+- [x] Component [Input](https://angular.io/api/core/Input)
+- [x] Conditional classes with [`ngClass`](https://angular.io/guide/built-in-directives#ngClass)
+- [x] Read [route parameters](https://angular.io/guide/router)
 
 ## Models
-- [ ] Interfaces
+- [x] Interfaces
 
 ## Services
-- [ ] Define a service
-- [ ] Inject the service (dependency injection)
-- [ ] Use the service
-- [ ] Observable and Subscribe
+- [x] Define a service
+- [x] Inject the service - [dependency injection](https://angular.io/guide/dependency-injection)
+- [x] Use the service
+- [x] Observable and Subscribe
 - [ ] Make requests to server
 
-## Router
-- [ ] outlet
-- [ ] navigation link
+## [Router](https://angular.io/guide/router)
+- [x] router-outlet
+- [x] navigation link
