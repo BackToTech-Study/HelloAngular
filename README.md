@@ -32,6 +32,7 @@ Will follow oficial [tutorial](https://angular.io/tutorial)
 ## Services
 - [x] Define a service
 - [x] Inject the service - [dependency injection](https://angular.io/guide/dependency-injection)
+- [x] [NgModule](https://angular.io/api/core/NgModule)
 - [x] Use the service
 - [x] Observable and Subscribe
 - [ ] Make requests to server
