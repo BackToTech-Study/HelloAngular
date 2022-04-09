@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 import { Hero } from '../models/hero';
 import { HeroService } from '../services/hero.service';
+import { invalidValuesValidatorFactory } from '../shared/validators/invalid-values.validator';
 
 @Component({
   selector: 'app-heroes',
@@ -10,6 +12,8 @@ import { HeroService } from '../services/hero.service';
 })
 export class HeroesComponent implements OnInit {
   heroes: Hero[] = [];
+  newHeroName: FormControl = new FormControl();
+  minNameLength = 3;
 
   constructor(private heroService: HeroService) {}
 
@@ -18,12 +22,17 @@ export class HeroesComponent implements OnInit {
   }
 
   getHeroes(): void {
-    this.heroService.getHeroes().subscribe((heroes) => (this.heroes = heroes));
+    this.heroService.getHeroes().subscribe((heroes) => { 
+      this.heroes = heroes;
+      this.newHeroName.addValidators([invalidValuesValidatorFactory(this.heroes.map(hero => hero.name))]);
+    });
   }
 
   add(name: string): void {
     name = name.trim();
     if (!name) {
+      this.newHeroName.markAsDirty();
+      this.newHeroName.markAsTouched();
       return;
     }
     this.heroService.addHero({ name } as Hero).subscribe((hero) => {

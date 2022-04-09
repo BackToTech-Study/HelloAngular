@@ -11,6 +11,7 @@ input {
   width: 100%;
   padding: 0.5rem;
   margin: 1rem 0;
+  margin-bottom: 0;
   box-sizing: border-box;
 }
 
@@ -87,4 +88,10 @@ button.delete {
 button.delete:hover {
   background-color: #525252;
   color: white;
+}
+
+.alert {
+  color: red;
+  margin: 0;
+  margin-top: 5px;
 }
