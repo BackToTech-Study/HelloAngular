@@ -2,7 +2,18 @@
 
 <div>
   <label for="new-hero">Hero name: </label>
-  <input id="new-hero" #heroName />
+  <input id="new-hero" #heroName required minlength="{{minNameLength}}" [formControl]="newHeroName"/>
+  <div *ngIf="newHeroName.invalid && (newHeroName.touched || newHeroName.dirty)">
+    <div *ngIf="newHeroName.errors?.['required']" class="alert">
+      The hero name can not be empty.
+    </div>
+    <div *ngIf="newHeroName.errors?.['minlength']" class="alert">
+      The hero name must have at least {{minNameLength}} characters.
+    </div>          
+    <div *ngIf="newHeroName.errors?.['forbiddenValueError']" class="alert">
+      Hero name taken taken. Please choose another value.
+    </div>    
+  </div>  
 
   <!-- (click) passes input value to add() and then clears the input -->
   <button

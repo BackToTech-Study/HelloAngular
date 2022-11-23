@@ -22,9 +22,15 @@ Will follow oficial [tutorial](https://angular.io/tutorial)
 - [x] [Directives](https://angular.io/guide/built-in-directives#built-in-structural-directives)
 - [x] Defining and showing arrays with structural directive [`*ngfor`](https://angular.io/api/common/NgForOf)
 - [x] Define functions for HTML events with [event binding](https://angular.io/guide/event-binding)
-- [x] Component [Input](https://angular.io/api/core/Input)
 - [x] Conditional classes with [`ngClass`](https://angular.io/guide/built-in-directives#ngClass)
 - [x] Read [route parameters](https://angular.io/guide/router)
+- [ ] Component [@Input](https://angular.io/api/core/Input)
+- [ ] Component [@Output](https://angular.io/api/core/Output)
+
+## Component Templates
+- [x] Custom [Field validators](https://angular.io/guide/form-validation#adding-custom-validators-to-template-driven-forms)
+- [ ] Input autocomplete example
+
 
 ## Models
 - [x] Interfaces
@@ -32,6 +38,8 @@ Will follow oficial [tutorial](https://angular.io/tutorial)
 ## Services
 - [x] Define a service
 - [x] Inject the service - [dependency injection](https://angular.io/guide/dependency-injection)
+- [x] A [Provider](https://angular.io/api/core/ConstructorProvider) describes how the Injector should be configured.
+- [x] [NG_VALIDATORS](https://angular.io/api/forms/NG_VALIDATORS) An InjectionToken for registering additional synchronous validators used with AbstractControls.
 - [x] [NgModule](https://angular.io/api/core/NgModule)
 - [x] Use the service
 - [x] Observable and Subscribe
